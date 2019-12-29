@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+@import "partials/colors";
+
+i {
+    color: red;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: $black-background;
+
+    img {
+        align-self: center;
+        width: 5.7rem;
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #navbar-titles {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Quicksand', sans-serif;
+
+        .nav-ref {
+            padding: 0.9rem 0.9rem;
+            transition: background 1s;
+        }
+    }
+
+    .nav-ref:hover {
+        background: $link-color-final;
+    }
+}
+
+#homescreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-image: url("../img/slider2.gif");
+    color: white;
+
+    #title {
+        align-self: center;
+        font-size: 6rem;
+        margin-top: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    #date, #location, #countdown {
+        align-self: center;
+        font-family: 'Audiowide', cursive;
+        margin-bottom: 1.5rem;
+    }
+
+    #countdown {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: white;
+        color: red;
+        border: white 2px dashed;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;    
+    }
+
+    #register {
+        border: none;
+        align-self: center;
+        margin-bottom: 0.5rem;
+        padding: 0.7rem 4rem 0.7rem 4rem;
+        border-radius: 50px;
+        background-color: orange;
+        font-size: 1.3rem;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+        transition: background 1s, color 1s;
+    }
+
+    #register:hover {
+        background: #cccccc;
+        color: rgb(0, 153, 255);
+    }
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    #about-body {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+
+        img {
+            padding: 2rem 5rem 2rem 5rem;
+        }
+
+        #about-text {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+
+            h1 {
+                font-size: 5rem;
+            }
+    
+            p {
+                margin-top: 1rem;
+                margin-right: 1rem;
+                font-size: 1.2rem;
+                font-family: 'Quicksand', sans-serif;
+            }
+        }
+    }
+    
+    #rules {
+        align-self: flex-end;
+
+        h1 {
+            margin-left: 1rem;
+            font-size: 5rem;
+        }
+
+        li {
+            font-size: 1.2rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}
+
+#challenges {
+    display: flex;
+    justify-content: space-around;
+    background-color: $black-background;
+
+    h1 {
+        align-self: center;
+        font-family: 'Audiowide', cursive;
+        font-size: 6rem;
+        color: white;
+    }
+
+    #challenge-img {
+        display: flex;
+        margin-top: 0.5rem;
+
+        .card-body {
+            display: flex;
+        }
+        .card {
+            width: 35rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 2px solid #b92e34;
+            background-color: orange;
+            color: white;
+            transition: background 1s, color 1s;
+        }
+        .challenge-card {
+            width: 15rem;
+            height: 15rem;
+            position: relative;
+            border-radius: 50%;
+        }
+        .card-title {
+            position: relative;
+            align-self: center;
+            margin-left: 1rem;
+            font-size: 2rem;
+            font-family: 'Quicksand', sans-serif;
+            word-wrap: break-word;
+        }
+
+        .card:hover {
+            background: #cccccc;
+            color: rgb(0, 153, 255);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+i {
+  color: red; }
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a; }
+  #navbar img {
+    align-self: center;
+    width: 5.7rem;
+    margin: 1rem 0 0.5rem 0; }
+  #navbar a {
+    text-decoration: none;
+    color: white; }
+  #navbar #navbar-titles {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Quicksand', sans-serif; }
+    #navbar #navbar-titles .nav-ref {
+      padding: 0.9rem 0.9rem;
+      transition: background 1s; }
+  #navbar .nav-ref:hover {
+    background: #000099; }
+
+#homescreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-image: url("../img/slider2.gif");
+  color: white; }
+  #homescreen #title {
+    align-self: center;
+    font-size: 6rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Press Start 2P', cursive; }
+  #homescreen #date, #homescreen #location, #homescreen #countdown {
+    align-self: center;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 1.5rem; }
+  #homescreen #countdown {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background-color: white;
+    color: red;
+    border: white 2px dashed;
+    border-radius: 10px;
+    margin-bottom: 1.5rem; }
+  #homescreen #register {
+    border: none;
+    align-self: center;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 4rem 0.7rem 4rem;
+    border-radius: 50px;
+    background-color: orange;
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    transition: background 1s, color 1s; }
+  #homescreen #register:hover {
+    background: #cccccc;
+    color: #0099ff; }
+
+#about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem; }
+  #about #about-body {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem; }
+    #about #about-body img {
+      padding: 2rem 5rem 2rem 5rem; }
+    #about #about-body #about-text {
+      display: flex;
+      flex-direction: column;
+      align-self: center; }
+      #about #about-body #about-text h1 {
+        font-size: 5rem; }
+      #about #about-body #about-text p {
+        margin-top: 1rem;
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        font-family: 'Quicksand', sans-serif; }
+  #about #rules {
+    align-self: flex-end; }
+    #about #rules h1 {
+      margin-left: 1rem;
+      font-size: 5rem; }
+    #about #rules li {
+      font-size: 1.2rem;
+      font-family: 'Quicksand', sans-serif; }
+
+#challenges {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a1a1a; }
+  #challenges h1 {
+    align-self: center;
+    font-family: 'Audiowide', cursive;
+    font-size: 6rem;
+    color: white; }
+  #challenges #challenge-img {
+    display: flex;
+    margin-top: 0.5rem; }
+    #challenges #challenge-img .card-body {
+      display: flex; }
+    #challenges #challenge-img .card {
+      width: 35rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      border: 2px solid #b92e34;
+      background-color: orange;
+      color: white;
+      transition: background 1s, color 1s; }
+    #challenges #challenge-img .challenge-card {
+      width: 15rem;
+      height: 15rem;
+      position: relative;
+      border-radius: 50%; }
+    #challenges #challenge-img .card-title {
+      position: relative;
+      align-self: center;
+      margin-left: 1rem;
+      font-size: 2rem;
+      font-family: 'Quicksand', sans-serif;
+      word-wrap: break-word; }
+    #challenges #challenge-img .card:hover {
+      background: #cccccc;
+      color: #0099ff;
+      cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */
