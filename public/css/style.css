@@ -126,10 +126,6 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin-top: 3rem;
 }
 
@@ -190,7 +186,7 @@ button:hover {
       -ms-grid-row-align: center;
       align-self: center;
   font-family: 'Audiowide', cursive;
-  font-size: 6rem;
+  font-size: 5rem;
   color: white;
 }
 
@@ -208,7 +204,7 @@ button:hover {
 }
 
 #challenges #challenge-img .card {
-  width: 35rem;
+  max-width: 34.5rem;
   min-height: 12rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -221,14 +217,12 @@ button:hover {
 }
 
 #challenges #challenge-img .challenge-card {
-  width: 15rem;
+  max-width: 15rem;
   height: 15rem;
-  position: relative;
   border-radius: 50%;
 }
 
 #challenges #challenge-img .card-title {
-  position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -247,13 +241,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #afafaf;
 }
 
@@ -262,12 +251,7 @@ button:hover {
       -ms-grid-row-align: center;
       align-self: center;
   font-family: 'Audiowide', cursive;
-  font-size: 6rem;
-}
-
-#timeline .down-arrow, #contact .down-arrow {
-  font-size: 4rem;
-  margin-left: 8rem;
+  font-size: 5rem;
 }
 
 #timeline .time-card, #contact .time-card {
@@ -287,10 +271,6 @@ button:hover {
 }
 
 #contact {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   background-color: #1a1a1a;
   color: white;
 }
@@ -309,5 +289,221 @@ button:hover {
 
 #contact #location {
   margin: 1rem 1rem;
+}
+
+#contact #map {
+  width: 28rem;
+  height: 28rem;
+  border: 0;
+}
+
+#scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border-radius: 0px;
+  background-color: #1a1a1a;
+  display: none;
+}
+
+#scroll-btn i {
+  font-size: 2rem;
+  color: white;
+}
+
+@media screen and (max-width: 665px) {
+  #homescreen {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #homescreen #title {
+    font-size: 2.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  #homescreen #date, #homescreen #location, #homescreen #countdown {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  #homescreen #countdown {
+    padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+  }
+  #homescreen #countdown h1 {
+    font-size: 1rem;
+  }
+  #homescreen #register {
+    padding: 0.35rem 2rem 0.35rem 2rem;
+    font-size: 1rem;
+  }
+  #navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #navbar img {
+    display: block;
+    width: 4.5rem;
+  }
+  #navbar #navbar-titles {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #navbar #navbar-titles .nav-ref {
+    padding: 0.25rem 0.25rem;
+  }
+  #navbar #navbar-titles .nav-ref h4 {
+    font-size: 0.80rem;
+  }
+  #about #about-body {
+    margin-top: 0;
+  }
+  #about #about-body img {
+    display: none;
+  }
+  #about #about-body #about-text h1 {
+    font-size: 4rem;
+  }
+  #about #about-body #about-text p {
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
+  }
+  #about #rules {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  #about #rules h1 {
+    font-size: 4rem;
+  }
+  #about #rules li {
+    font-size: 0.8rem;
+  }
+  #challenges, #timeline, #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #challenges h1, #timeline h1, #contact h1 {
+    font-size: 2.5rem;
+  }
+  #challenges #challenge-img, #timeline #challenge-img, #contact #challenge-img {
+    margin-left: 1.75rem;
+  }
+  #challenges #challenge-img .card, #timeline #challenge-img .card, #contact #challenge-img .card {
+    min-height: 3.5rem;
+  }
+  #challenges #challenge-img .card-body, #timeline #challenge-img .card-body, #contact #challenge-img .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 0;
+  }
+  #challenges #challenge-img .card-body p, #timeline #challenge-img .card-body p, #contact #challenge-img .card-body p {
+    font-size: 0.9rem;
+  }
+  #challenges #challenge-img .challenge-card, #timeline #challenge-img .challenge-card, #contact #challenge-img .challenge-card {
+    display: none;
+  }
+  #challenges #challenge-img .card-title, #timeline #challenge-img .card-title, #contact #challenge-img .card-title {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+  #timeline h1 {
+    font-size: 2.25rem;
+  }
+  #timeline #day-toggle {
+    padding: 0.35rem 2rem 0.35rem 2rem;
+    font-size: 1.25rem;
+  }
+  #timeline .time-card {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  #timeline .time-card h3 {
+    font-size: 1.25rem;
+  }
+  #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact #team-members {
+    font-size: 1.25rem;
+  }
+  #contact #social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contact #social a {
+    margin-right: 1rem;
+  }
+  #contact #map {
+    width: 20rem;
+    height: 20rem;
+    margin-left: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #about-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-body img {
+    padding: 0 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 50%;
+    height: auto;
+  }
+  #challenges {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #challenges #challenge-img .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  #challenges {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

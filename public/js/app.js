@@ -109,8 +109,19 @@ const $days = document.querySelector('#days'),
       $hours = document.querySelector('#hours'),
       $minutes = document.querySelector('#minutes');
 
-/* Theme card events */
-const $themeCards = document.querySelectorAll('.card-body');
+const $themeCards = document.querySelectorAll('.card-body');    //Theme card elements
+const $scrollBtn = document.querySelector('#scroll-btn');      // Scroll button
+
+document.addEventListener('scroll', () => {
+    if (window.pageYOffset !== 0) {
+        $scrollBtn.style.display = "block";
+        $scrollBtn.addEventListener('click', () => {
+            window.scrollTo(0,0);
+        })
+    } else {
+        $scrollBtn.style.display = "none";   
+    }
+});
 
 /* On load timer */
 window.onload = () => {
