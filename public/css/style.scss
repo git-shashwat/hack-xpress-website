@@ -7,6 +7,23 @@ i {
     color: red;
 }
 
+button {
+    border: none;
+    align-self: center;
+    margin-bottom: 0.5rem;
+    padding: 0.7rem 4rem 0.7rem 4rem;
+    border-radius: 50px;
+    background-color: orange;
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+    transition: background 1s, color 1s;
+}
+
+button:hover {
+    background-color: #cccccc;
+    color: rgb(0, 153, 255);
+}
+
 #navbar {
     display: flex;
     flex-direction: column;
@@ -69,24 +86,6 @@ i {
         border: white 2px dashed;
         border-radius: 10px;
         margin-bottom: 1.5rem;    
-    }
-
-    #register {
-        border: none;
-        align-self: center;
-        margin-bottom: 0.5rem;
-        padding: 0.7rem 4rem 0.7rem 4rem;
-        border-radius: 50px;
-        background-color: orange;
-        font-size: 1.3rem;
-        color: white;
-        font-family: 'Quicksand', sans-serif;
-        transition: background 1s, color 1s;
-    }
-
-    #register:hover {
-        background: #cccccc;
-        color: rgb(0, 153, 255);
     }
 }
 
@@ -158,10 +157,12 @@ i {
         }
         .card {
             width: 35rem;
+            min-height: 12rem;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
             border: 2px solid #b92e34;
             background-color: orange;
+            font-family: 'Quicksand', sans-serif;
             color: white;
             transition: background 1s, color 1s;
         }
@@ -176,7 +177,6 @@ i {
             align-self: center;
             margin-left: 1rem;
             font-size: 2rem;
-            font-family: 'Quicksand', sans-serif;
             word-wrap: break-word;
         }
 
@@ -188,7 +188,7 @@ i {
     }
 }
 
-#timeline {
+#timeline, #contact {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -198,23 +198,6 @@ i {
         align-self: center;
         font-family: 'Audiowide', cursive;
         font-size: 6rem;
-    }
-
-    button {
-        border: none;
-        align-self: center;
-        margin-bottom: 0.5rem;
-        padding: 0.7rem 4rem 0.7rem 4rem;
-        border-radius: 50px;
-        background-color: orange;
-        font-size: 1.3rem;
-        font-family: 'Quicksand', sans-serif;
-        transition: background 1s, color 1s;
-    }
-
-    button:hover {
-        background-color: #cccccc;
-        color: rgb(0, 153, 255);
     }
 
     .down-arrow {
@@ -233,4 +216,23 @@ i {
         color: white;
     }
 
+}
+
+#contact {
+    flex-direction: row;
+    background-color: $black-background;
+    color: white;
+
+    #team-members, #social {
+        align-self: center;
+        font-size: 1.5rem;
+        span {
+            color: #1b03a3;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+
+    #location {
+        margin: 1rem 1rem;
+    }
 }
