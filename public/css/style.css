@@ -313,7 +313,7 @@ button:hover {
   color: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 665px) {
   #homescreen {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -322,13 +322,13 @@ button:hover {
     padding-bottom: 1rem;
   }
   #homescreen #title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
   }
   #homescreen #date, #homescreen #location, #homescreen #countdown {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
   }
   #homescreen #countdown {
@@ -342,10 +342,10 @@ button:hover {
     font-size: 1rem;
   }
   #navbar {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #navbar img {
     display: block;
@@ -376,7 +376,7 @@ button:hover {
     display: none;
   }
   #about #about-body #about-text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   #about #about-body #about-text p {
     margin-top: 0.5rem;
@@ -388,7 +388,7 @@ button:hover {
         align-self: flex-start;
   }
   #about #rules h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   #about #rules li {
     font-size: 0.8rem;
@@ -400,7 +400,7 @@ button:hover {
             flex-direction: column;
   }
   #challenges h1, #timeline h1, #contact h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   #challenges #challenge-img, #timeline #challenge-img, #contact #challenge-img {
     margin-left: 1.75rem;
@@ -429,7 +429,7 @@ button:hover {
     font-size: 1.5rem;
   }
   #timeline h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   #timeline #day-toggle {
     padding: 0.35rem 2rem 0.35rem 2rem;
@@ -462,7 +462,7 @@ button:hover {
   #contact #map {
     width: 20rem;
     height: 20rem;
-    margin-left: 1.3rem;
+    margin-left: 1rem;
   }
 }
 

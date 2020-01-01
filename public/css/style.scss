@@ -249,7 +249,7 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 665px) {
 
     #homescreen {
         justify-content: flex-start;
@@ -257,14 +257,14 @@ button:hover {
         padding-bottom: 1rem;
 
         #title {
-            font-size: 2.25rem;
+            font-size: 2rem;
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
             margin-left: 0.5rem;
         }
 
         #date, #location, #countdown {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin-bottom: 1rem;
         }
 
@@ -282,7 +282,7 @@ button:hover {
     }
 
     #navbar {
-        flex-direction: row;
+        flex-direction: column;
 
         img {
             display: block;
@@ -314,7 +314,7 @@ button:hover {
     
             #about-text {
                 h1 {
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
     
                 p {
@@ -327,7 +327,7 @@ button:hover {
         #rules {
             align-self: flex-start;
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
             }
             li {
                 font-size: 0.8rem;
@@ -339,7 +339,7 @@ button:hover {
         flex-direction: column;
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         #challenge-img {
@@ -369,7 +369,7 @@ button:hover {
     
     #timeline {
         h1 {
-            font-size: 2.25rem;
+            font-size: 2rem;
         }
 
         #day-toggle {
@@ -404,7 +404,7 @@ button:hover {
         #map {
             width: 20rem;
             height: 20rem;
-            margin-left: 1.3rem;
+            margin-left: 1rem;
         }
     }
 }
