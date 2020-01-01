@@ -283,7 +283,7 @@ button:hover {
 }
 
 #contact #team-members span, #contact #social span {
-  color: #1b03a3;
+  color: orange;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -462,7 +462,7 @@ button:hover {
   #contact #map {
     width: 20rem;
     height: 20rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 }
 
