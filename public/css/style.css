@@ -35,11 +35,21 @@ button:hover {
   background-color: #1a1a1a;
 }
 
-#navbar img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 5.7rem;
+#navbar #logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#navbar #logos img {
+  width: 5rem;
   margin: 1rem 0 0.5rem 0;
 }
 
@@ -291,7 +301,7 @@ button:hover {
   margin: 1rem 1rem;
 }
 
-#contact #map {
+#contact #location #map {
   width: 28rem;
   height: 28rem;
   border: 0;
@@ -313,7 +323,133 @@ button:hover {
   color: white;
 }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 74.9375em) {
+  #challenges, #timeline, #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #challenges #challenge-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #challenges #challenge-img .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact #social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contact #social a {
+    margin-left: 1rem;
+  }
+  #contact #location {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  #homescreen #title {
+    font-size: 4rem;
+  }
+  #about-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about-body img {
+    padding: 0 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 50%;
+    height: auto;
+  }
+  #challenges {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #challenges #challenge-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #challenges #challenge-img .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #challenges #challenge-img .challenge-card {
+    max-width: 12rem;
+    height: 12rem;
+  }
+  #timeline, #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact #social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #contact #social a {
+    margin-right: 1rem;
+  }
+  #contact #location {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  #navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #navbar #logos img {
+    width: 3.5rem;
+  }
+  #navbar #navbar-titles {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #navbar #navbar-titles .nav-ref {
+    padding: 0.25rem 0.25rem;
+  }
+  #navbar #navbar-titles .nav-ref h4 {
+    font-size: 0.80rem;
+  }
   #homescreen {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -340,34 +476,6 @@ button:hover {
   #homescreen #register {
     padding: 0.35rem 2rem 0.35rem 2rem;
     font-size: 1rem;
-  }
-  #navbar {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #navbar img {
-    display: block;
-    width: 4rem;
-  }
-  #navbar #navbar-titles {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  #navbar #navbar-titles .nav-ref {
-    padding: 0.25rem 0.25rem;
-  }
-  #navbar #navbar-titles .nav-ref h4 {
-    font-size: 0.80rem;
   }
   #about #about-body {
     margin-top: 0;
@@ -459,51 +567,14 @@ button:hover {
   #contact #social a {
     margin-right: 1rem;
   }
-  #contact #map {
-    width: 20rem;
-    height: 20rem;
-    margin-left: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 1080px) {
-  #about-body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #about-body img {
-    padding: 0 0;
+  #contact #location {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    max-width: 50%;
-    height: auto;
   }
-  #challenges {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #challenges #challenge-img .card-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 1680px) {
-  #challenges {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  #contact #location #map {
+    width: 20rem;
+    height: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

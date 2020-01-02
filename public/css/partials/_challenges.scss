@@ -1,0 +1,49 @@
+#challenges {
+    display: flex;
+    justify-content: space-between;
+    background-color: $black-background;
+
+    h1 {
+        align-self: center;
+        font-family: 'Audiowide', cursive;
+        font-size: 5rem;
+        color: white;
+    }
+
+    #challenge-img {
+        display: flex;
+        margin-top: 0.5rem;
+
+        .card-body {
+            display: flex;
+        }
+        .card {
+            max-width: 34.5rem;
+            min-height: 12rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 2px solid #b92e34;
+            background-color: orange;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            transition: background 1s, color 1s;
+        }
+        .challenge-card {
+            max-width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+        }
+        .card-title {
+            align-self: center;
+            margin-left: 1rem;
+            font-size: 2rem;
+            word-wrap: break-word;
+        }
+
+        .card:hover {
+            background: #cccccc;
+            color: $button-transition-color;
+            cursor: pointer;
+        }
+    }
+}

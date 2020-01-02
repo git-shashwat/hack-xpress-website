@@ -1,51 +1,47 @@
 /* Time cards Content */
 const timecardsDayOne = [
     {
-        time: "8:45 AM - 9:00 AM",
-        event: "Reporting time"
+        time: "8:30 AM",
+        event: "Reporting Time"
     },
     {
-        time: "9:00 AM",
-        event: "Registrations"
+        time: "8:30 AM to 10:00 AM",
+        event: "Registration"
     },
     {
-        time: "9:15 AM",
-        event: "Opening Presentations"
+        time: "10:00 AM to 10:30 AM",
+        event: "Opening Presentation by Our Team"
     },
     {
-        time: "10:00 AM",
+        time: "11:00 AM",
         event: "Hack Begins!"
     },
     {
-        time: "2:00 PM to 3:00 PM",
+        time: "2:00 PM to 2:45 PM",
         event: "Lunch"
     },
     {
-        time: "5:00 PM",
-        event: "First Evaluation"
+        time: "3:00 PM",
+        event: "First Mentors' Round"
     },
     {
-        time: "6:00 PM",
-        event: "End of Day 1"
+        time: "04:00 PM to 05:30 PM",
+        event: "Informative Seminar"
     }
 ];
 
 const timecardsDayTwo = [
     {
-        time: "10:00 AM",
+        time: "9:00 AM",
         event: "Hack Resumes!"
     },
     {
-        time: "3:00 PM",
-        event: "Second Evaluation"
+        time: "10:30 AM",
+        event: "Second Mentors' Round"
     },
     {
-        time: "4:00 PM",
-        event: "Final Presentations"
-    },
-    {
-        time: "5:00 PM",
-        event: "Results Declaration"
+        time: "11:00 AM to 01:00 PM",
+        event: "Pitching Round"
     }
 ];
 

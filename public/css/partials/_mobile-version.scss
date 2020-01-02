@@ -1,0 +1,162 @@
+@media screen and (max-width: 40em) {
+    #navbar {
+        flex-direction: column;
+
+        #logos {
+            img {
+                width: 3.5rem;
+            }
+        }
+
+        #navbar-titles {
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+
+            .nav-ref {
+                padding: 0.25rem 0.25rem;
+
+                h4 {
+                    font-size: 0.80rem;
+                }
+            }
+        }
+    }
+
+    #homescreen {
+        justify-content: flex-start;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        #title {
+            font-size: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        #date, #location, #countdown {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        #countdown {
+            padding: 0.5rem 0.25rem 0.5rem 0.25rem;
+            h1 {
+                font-size: 1rem;
+            }
+        }
+
+        #register {
+            padding: 0.35rem 2rem 0.35rem 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    #about {
+        #about-body {
+            margin-top: 0;
+    
+            img {
+                display: none;
+            }
+    
+            #about-text {
+                h1 {
+                    font-size: 3rem;
+                }
+    
+                p {
+                    margin-top: 0.5rem;
+                    margin-right: 0.5rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        #rules {
+            align-self: flex-start;
+            h1 {
+                font-size: 3rem;
+            }
+            li {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    #challenges, #timeline, #contact {
+        flex-direction: column;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        #challenge-img {
+            margin-left: 1.75rem;
+
+            .card {
+                min-height: 3.5rem;
+            }
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                padding: 0 0;
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+            .challenge-card {
+                display: none;
+            }
+            .card-title {
+                margin-left: 0;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    #timeline {
+        h1 {
+            font-size: 2rem;
+        }
+
+        #day-toggle {
+            padding: 0.35rem 2rem 0.35rem 2rem;
+            font-size: 1.25rem;   
+        }
+
+        .time-card {
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0.5rem;
+            
+            h3 {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    #contact {
+        flex-direction: column;
+
+        #team-members {
+            font-size: 1.25rem;
+        }
+
+        #social {
+            display: flex;
+            a {
+                margin-right: 1rem;
+            }
+        }
+
+        #location {
+            align-self: center;
+            #map {
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+
+    }
+}

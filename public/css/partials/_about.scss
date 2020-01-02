@@ -1,0 +1,45 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    #about-body {
+        display: flex;
+        margin-top: 3rem;
+
+        img {
+            padding: 2rem 5rem 2rem 5rem;
+        }
+
+        #about-text {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+
+            h1 {
+                font-size: 5rem;
+            }
+    
+            p {
+                margin-top: 1rem;
+                margin-right: 1rem;
+                font-size: 1.2rem;
+                font-family: 'Quicksand', sans-serif;
+            }
+        }
+    }
+    
+    #rules {
+        align-self: flex-end;
+
+        h1 {
+            margin-left: 1rem;
+            font-size: 5rem;
+        }
+
+        li {
+            font-size: 1.2rem;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}

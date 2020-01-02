@@ -1,0 +1,27 @@
+@media screen and (max-width: 74.9375em) {
+    #challenges, #timeline, #contact {
+        flex-direction: column;
+    }
+
+    #challenges {
+        #challenge-img {
+            align-self: center;
+            .card-body {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    #contact {
+        #social {
+            display: flex;
+            a {
+                margin-left: 1rem;
+            }
+        }
+        #location {
+            align-self: center;
+        }
+    }
+}

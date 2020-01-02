@@ -1,0 +1,23 @@
+#timeline, #contact {
+    display: flex;
+    justify-content: space-around;
+    background-color: #afafaf;
+
+    h1 {
+        align-self: center;
+        font-family: 'Audiowide', cursive;
+        font-size: 5rem;
+    }
+
+    .time-card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding: 1rem 1rem;
+        background-color: #E0115F;
+        border: 2px orange solid;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+    }
+
+}

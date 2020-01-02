@@ -1,0 +1,32 @@
+#homescreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-image: url("../img/slider2.gif");
+    color: white;
+
+    #title {
+        align-self: center;
+        font-size: 6rem;
+        margin-top: 1.8rem;
+        margin-bottom: 1.5rem;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+    #date, #location, #countdown {
+        align-self: center;
+        font-family: 'Audiowide', cursive;
+        margin-bottom: 1.5rem;
+    }
+
+    #countdown {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: white;
+        color: red;
+        border: white 2px dashed;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;    
+    }
+}

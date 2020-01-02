@@ -1,0 +1,36 @@
+#navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: $black-background;
+
+    #logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        img {
+            width: 5rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #navbar-titles {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Quicksand', sans-serif;
+
+        .nav-ref {
+            padding: 0.9rem 0.9rem;
+            transition: background 1s;
+        }
+    }
+
+    .nav-ref:hover {
+        background: $link-color-final;
+    }
+}

@@ -1,0 +1,22 @@
+#contact {
+    background-color: $black-background;
+    color: white;
+
+    #team-members, #social {
+        align-self: center;
+        font-size: 1.5rem;
+        span {
+            color: orange;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+
+    #location {
+        margin: 1rem 1rem;
+        #map {
+            width: 28rem;
+            height: 28rem;
+            border: 0;
+        }
+    }
+}
