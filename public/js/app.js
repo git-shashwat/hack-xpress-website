@@ -13,16 +13,16 @@ const timecardsDayOne = [
         event: "Opening Presentation by Our Team"
     },
     {
-        time: "11:00 AM",
+        time: "10:30 AM",
         event: "Hack Begins!"
     },
     {
-        time: "2:00 PM to 2:45 PM",
+        time: "1:45 PM to 2:15 PM",
         event: "Lunch"
     },
     {
-        time: "3:00 PM",
-        event: "First Mentors' Round"
+        time: "2:15 PM",
+        event: "Hack Resumes!"
     },
     {
         time: "04:00 PM to 05:30 PM",
@@ -32,16 +32,16 @@ const timecardsDayOne = [
 
 const timecardsDayTwo = [
     {
-        time: "9:00 AM",
-        event: "Hack Resumes!"
+        time: "9:30 AM",
+        event: "Reporting"
     },
     {
-        time: "10:30 AM",
-        event: "Second Mentors' Round"
-    },
-    {
-        time: "11:00 AM to 01:00 PM",
+        time: "10:00 AM to 12:00 NOON",
         event: "Pitching Round"
+    },
+    {
+        time: "01:00 PM",
+        event: "Prize Distribution"
     }
 ];
 
