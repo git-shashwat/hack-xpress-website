@@ -496,14 +496,14 @@ button:hover {
     margin-right: 0.5rem;
     font-size: 0.8rem;
   }
-  #about #rules {
+  #about #rules, #about #judgement {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
-  #about #rules h1 {
+  #about #rules h1, #about #judgement h1 {
     font-size: 3rem;
   }
-  #about #rules li, #about #rules #rulebook {
+  #about #rules li, #about #rules #rulebook, #about #judgement li, #about #judgement #rulebook {
     font-size: 0.8rem;
   }
   #challenges, #timeline, #contact {
