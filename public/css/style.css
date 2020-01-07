@@ -190,9 +190,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #1a1a1a;
 }
 
@@ -285,9 +284,37 @@ button:hover {
   color: white;
 }
 
-#contact {
+#faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #1a1a1a;
   color: white;
+}
+
+#faq h1 {
+  font-size: 5rem;
+  font-family: 'Audiowide', cursive;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#faq li {
+  font-size: 1.2rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#faq .que::first-letter {
+  font-size: 200%;
+  color: orange;
+}
+
+#contact {
+  background-color: #afafaf;
+  color: black;
 }
 
 #contact #team-members, #contact #social {
@@ -298,7 +325,7 @@ button:hover {
 }
 
 #contact #team-members span, #contact #social span {
-  color: orange;
+  color: blue;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -329,7 +356,7 @@ button:hover {
 }
 
 @media screen and (max-width: 74.9375em) {
-  #challenges, #timeline, #contact {
+  #challenges, #timeline, #faq, #contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -406,7 +433,7 @@ button:hover {
     max-width: 12rem;
     height: 12rem;
   }
-  #timeline, #contact {
+  #timeline, #contact, #faq {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -506,22 +533,22 @@ button:hover {
   #about #rules li, #about #rules #rulebook, #about #judgement li, #about #judgement #rulebook {
     font-size: 0.8rem;
   }
-  #challenges, #timeline, #contact {
+  #challenges, #timeline, #faq, #contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #challenges h1, #timeline h1, #contact h1 {
+  #challenges h1, #timeline h1, #faq h1, #contact h1 {
     font-size: 2rem;
   }
-  #challenges #challenge-img, #timeline #challenge-img, #contact #challenge-img {
+  #challenges #challenge-img, #timeline #challenge-img, #faq #challenge-img, #contact #challenge-img {
     margin-left: 1.75rem;
   }
-  #challenges #challenge-img .card, #timeline #challenge-img .card, #contact #challenge-img .card {
+  #challenges #challenge-img .card, #timeline #challenge-img .card, #faq #challenge-img .card, #contact #challenge-img .card {
     min-height: 3.5rem;
   }
-  #challenges #challenge-img .card-body, #timeline #challenge-img .card-body, #contact #challenge-img .card-body {
+  #challenges #challenge-img .card-body, #timeline #challenge-img .card-body, #faq #challenge-img .card-body, #contact #challenge-img .card-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -531,13 +558,13 @@ button:hover {
             flex-direction: column;
     padding: 0 0;
   }
-  #challenges #challenge-img .card-body p, #timeline #challenge-img .card-body p, #contact #challenge-img .card-body p {
+  #challenges #challenge-img .card-body p, #timeline #challenge-img .card-body p, #faq #challenge-img .card-body p, #contact #challenge-img .card-body p {
     font-size: 0.9rem;
   }
-  #challenges #challenge-img .challenge-card, #timeline #challenge-img .challenge-card, #contact #challenge-img .challenge-card {
+  #challenges #challenge-img .challenge-card, #timeline #challenge-img .challenge-card, #faq #challenge-img .challenge-card, #contact #challenge-img .challenge-card {
     display: none;
   }
-  #challenges #challenge-img .card-title, #timeline #challenge-img .card-title, #contact #challenge-img .card-title {
+  #challenges #challenge-img .card-title, #timeline #challenge-img .card-title, #faq #challenge-img .card-title, #contact #challenge-img .card-title {
     margin-left: 0;
     font-size: 1.5rem;
   }
