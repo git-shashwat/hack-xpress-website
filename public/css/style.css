@@ -166,19 +166,24 @@ button:hover {
   font-family: 'Quicksand', sans-serif;
 }
 
-#about #rules {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+#about #rules, #about #judgement {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-#about #rules h1 {
-  margin-left: 1rem;
+#about #rules h1, #about #judgement h1 {
   font-size: 5rem;
 }
 
-#about #rules li {
+#about #rules li, #about #judgement li {
   font-size: 1.2rem;
   font-family: 'Quicksand', sans-serif;
+}
+
+#about #rules #rulebook, #about #judgement #rulebook {
+  margin-top: 1em;
+  padding: 0.8em 0.8em;
 }
 
 #challenges {
@@ -498,7 +503,7 @@ button:hover {
   #about #rules h1 {
     font-size: 3rem;
   }
-  #about #rules li {
+  #about #rules li, #about #rules #rulebook {
     font-size: 0.8rem;
   }
   #challenges, #timeline, #contact {
