@@ -120,20 +120,20 @@ document.addEventListener('scroll', () => {
 });
 
 /* On load timer */
-window.onload = () => {
-    const ans = differenceGenerator();
-    $days.innerHTML = ans.days;
-    $hours.innerHTML = ans.hours;
-    $minutes.innerHTML = ans.minutes;
-}
+// window.onload = () => {
+//     const ans = differenceGenerator();
+//     $days.innerHTML = ans.days;
+//     $hours.innerHTML = ans.hours;
+//     $minutes.innerHTML = ans.minutes;
+// }
 
-/* Regular countdown */
-setInterval(() => {
-    const ans = differenceGenerator();
-    $days.innerHTML = ans.days;
-    $hours.innerHTML = ans.hours;
-    $minutes.innerHTML = ans.minutes;
-}, 60000);
+// /* Regular countdown */
+// setInterval(() => {
+//     const ans = differenceGenerator();
+//     $days.innerHTML = ans.days;
+//     $hours.innerHTML = ans.hours;
+//     $minutes.innerHTML = ans.minutes;
+// }, 60000);
 
 const $timeTemplate = document.querySelector('#timecard-template').innerHTML;   //template
 
